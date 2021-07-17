@@ -1,0 +1,42 @@
+{
+  "name": "teste-apprun-full",
+  "version": "1.0.0",
+  "description": "Simple AppRun test application with Tailwindcss",
+  "main": "index.tsx",
+  "scripts": {
+    "dev": "concurrently --kill-others \"npm run start:*\"",
+    "start:rollup": "rollup -c -w",
+    "start:server": "live-server public --mount=/src:./src --no-browser",
+    "build": "rollup -c --environment NODE_ENV:production"
+  },
+  "author": "rogersanctus@gmail.com",
+  "license": "ISC",
+  "repository": "http://github.com/rogersanctus/teste-apprun-full",
+  "dependencies": {
+    "apprun": "^3.28.6"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-typescript": "^8.2.1",
+    "autoprefixer": "^10.3.1",
+    "concurrently": "^6.2.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.1",
+    "postcss": "^8.3.5",
+    "postcss-import": "^14.0.2",
+    "prettier": "^2.3.2",
+    "rollup": "^2.53.1",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-recommended": "^5.0.0",
+    "stylelint-prettier": "^1.2.0",
+    "stylelint-scss": "^3.19.0",
+    "tailwindcss": "^2.2.4",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
+  }
+}
